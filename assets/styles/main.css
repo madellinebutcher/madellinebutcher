@@ -1,0 +1,33 @@
+
+body{
+    font-family: 'Stylish', sans-serif;
+    background-image: url(/assets/cherryblossom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+.myname{
+    font-family: 'Marck Script', cursive;
+}
+.nav-format{
+    list-style-type:none;
+    color:white;
+}
+
+.sec-col{
+    display:flex;
+    justify-content:center;
+    background:#be3144;
+}
+.profile-img{
+    margin-bottom:1vh;
+    border-radius:5vw;
+}
+.nav-col-2{
+    background:#1D2786;
+    padding-top:3vh;
+}
+.icon{
+    color:#d3d6db
+}
