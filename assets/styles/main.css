@@ -1,33 +1,46 @@
 
 body{
     font-family: 'Stylish', sans-serif;
+  
+}
+.bg-image{
     background-image: url(/assets/cherryblossom.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
+    opacity: 0.5;
+    height: 100vh;
 }
 .myname{
     font-family: 'Marck Script', cursive;
+    height:25vh;
+    opacity: none;
+    margin:0;
 }
 .nav-format{
     list-style-type:none;
-    color:white;
+    color:black;
 }
-
-.sec-col{
-    display:flex;
-    justify-content:center;
-    background:#be3144;
+.sec-col-1{
+    height:10vh;
 }
 .profile-img{
-    margin-bottom:1vh;
-    border-radius:5vw;
+    border-radius:6vw;
+    margin-top:10vh;
 }
 .nav-col-2{
-    background:#1D2786;
     padding-top:3vh;
+
 }
 .icon{
-    color:#d3d6db
+    color:#f6bff8
+}
+.nav-format li{
+    padding-right:2vw;
+}
+.sec-col{
+    justify-content: center;
+}
+.sec-col-3{
+    height:10vh;
 }
