@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Stylish', sans-serif;
-  
+    
 }
 .bg-image{
     background-image: url(/assets/cherryblossom.jpg);
@@ -23,6 +23,10 @@ body{
     color:black;
     padding-left:65vw;
 }
+.nav-format a{
+    color:white;
+}
+
 .sec-col-1{
     height:10vh;
 }
@@ -57,4 +61,7 @@ body{
 }
 .contact-bg{
     background-color:#FFE6EB;
+}
+.port-icon{
+    margin-right: 3vw;
 }
