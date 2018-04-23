@@ -13,7 +13,7 @@ body{
 }
 .myname{
     font-family: 'Marck Script', cursive;
-    height:25vh;
+    height:5vh;
     opacity: none;
     margin:0;
     color:white;
@@ -28,7 +28,7 @@ body{
 }
 
 .sec-col-1{
-    height:10vh;
+    height:5vh;
 }
 .profile-img{
     border-radius:6vw;
@@ -46,7 +46,7 @@ body{
     justify-content: center;
 }
 .sec-col-3{
-    height:10vh;
+    height:5vh;
     color:white;
 }
 .about-bg{
