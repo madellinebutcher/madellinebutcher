@@ -11,42 +11,51 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script|Stylish" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
-    <nav class="container-fluid">
-        <div class="row bg-image">
-            <div class="col-12 d-flex nav-col-2">
-                <h4 class="nav-me">.maddy</h4>
-                <ul class="d-flex justify-content-end nav-format">
-                    <a href="">
-                        <li>About</li>
-                    </a>
-                    <a href="">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="">
-                        <li>Skills</li>
-                    </a>
-                    <a href="">
-                        <li>Resume</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
-                </ul>
+    <header class="container-fluid">
+        <nav>
+            <div class="row d-flex justify-content-between">
+                <div class="col-4 nav-col-1">
+                    <h4 class="nav-me pt-2">.maddy</h4>
+                </div>
+                <div class="col-4">
+                    <ul class="nav-format d-flex justify-content-center pt-2">
+                        <a href="">
+                            <li>About</li>
+                        </a>
+                        <a href="">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="">
+                            <li>Skills</li>
+                        </a>
+                        <a href="">
+                            <li>Resume</li>
+                        </a>
+                        <a href="">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-            <div class="col-4 offset-4 d-flex justify-content-center sec-col-2">
+        </nav>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
                 <img class="profile-img" src="assets/me.jpg" alt="me" height="160" width="150">
             </div>
-            <div class="col-4 offset-4 d-flex justify-content-center sec-col-1">
-                <h1 class="myname">Madelline Butcher</h1>
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class="myname pt-2">Madelline Butcher</h1>
             </div>
-            <div class="col-4 offset-4 d-flex sec-col-3 sec-col">
-                <h3>Junior Developer</h3>
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="title">Junior Developer</h3>
             </div>
-            <div class="col-4 offset-4 d-flex sec-col">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
                 <a href="">
                     <i class="fab fa-github fa-2x mr-2 icon"></i>
                 </a>
@@ -55,13 +64,13 @@
                 </a>
             </div>
         </div>
-    </nav>
+    </header>
     <!--Intro-->
     <section class="container-fluid">
         <!--About-->
         <div class="row about-bg">
             <div class="col-12">
-                <h1>.ABOUT ME</h1>
+                <h1 class="maintitles">.about me</h1>
             </div>
             <div class="col-12">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate, unde ut quidem perferendis iure
@@ -72,14 +81,15 @@
         <!--Skills-->
         <div class="row about-bg">
             <div class="col d-flex justify-content-center space-between">
-                <img class="skills-icon" src="//placehold.it/100x100" alt="">
-                <img class="skills-icon" src="//placehold.it/100x100" alt="">
-                <img class="skills-icon" src="//placehold.it/100x100" alt="">
+                <i class="devicon-html5-plain-wordmark skills-icon"></i>
+                <i class="devicon-css3-plain-wordmark skills-icon"></i>
+                <i class="devicon-bootstrap-plain skills-icon"></i>
+                <i class="devicon-javascript-plain skills-icon"></i>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h1>.PORTFOLIO</h1>
+                <h1 class="maintitles">.portfolio</h1>
             </div>
         </div>
         <div class="row">
@@ -91,7 +101,7 @@
         </div>
         <div class="row contact-bg">
             <div class="col">
-                <h1>.CONTACT ME</h1>
+                <h1 class="maintitles">.contact me</h1>
             </div>
         </div>
         <div class="row">
@@ -101,8 +111,8 @@
 
     <footer class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h6>copyrighted and made by</h6>
+            <div class="col-0">
+                <h6>copyrighted and made by<span class="nav-me"> .maddy</span></h6> 
             </div>
         </div>
     </footer>
