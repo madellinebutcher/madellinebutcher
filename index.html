@@ -17,7 +17,7 @@
 
 <body>
     <header class="container-fluid">
-        <nav>
+        <navbar>
             <div class="row d-flex justify-content-between">
                 <div class="col-4 nav-col-1">
                     <h4 class="nav-me pt-2">.maddy</h4>
@@ -42,28 +42,28 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <img class="profile-img" src="assets/me.jpg" alt="me" height="160" width="150">
+            </nav>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img class="profile-img" src="assets/me.jpg" alt="me" height="160" width="150">
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h1 class="myname pt-2">Madelline Butcher</h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h3 class="title">Junior Developer</h3>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class="myname pt-2">Madelline Butcher</h1>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a href="">
+                        <i class="fab fa-github fa-2x mr-2 icon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin fa-2x icon"></i>
+                    </a>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <h3 class="title">Junior Developer</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <a href="">
-                    <i class="fab fa-github fa-2x mr-2 icon"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-linkedin fa-2x icon"></i>
-                </a>
-            </div>
-        </div>
     </header>
     <!--Intro-->
     <section class="container-fluid">
@@ -104,15 +104,60 @@
                 <h1 class="maintitles">.contact me</h1>
             </div>
         </div>
-        <div class="row">
-            <!--email boxes-->
-        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
     </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid contact-bg">
         <div class="row">
-            <div class="col-0">
-                <h6>copyrighted and made by<span class="nav-me"> .maddy</span></h6> 
+            <div class="col">
+                <h6>copyrighted and made by
+                    <span class="footer-me"> .maddy</span>
+                </h6>
             </div>
         </div>
     </footer>
