@@ -4,19 +4,17 @@ body{
     
 }
 header{
-    background-image: url(/assets/cherryblossom.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(136, 133, 136, 0.8);
-    height: auto;
+
+    background-color: rgba(105, 105, 105, 0.404);
+    border-bottom: 5px solid #f6bff8;
+
 }
 .myname{
     font-family: 'Marck Script', cursive;
     opacity: none;
     margin:0;
-    color:white;
 }
+
 .nav-format{
     list-style-type:none;
     color:black;
@@ -33,7 +31,7 @@ header{
 }
 
 .icon{
-    color:#f6bff8
+    color:#f6bff8;
 }
 .nav-format li{
     padding-right:2vw;
@@ -62,13 +60,27 @@ header{
 .port-icon{
     margin-right: 3vw;
 }
-.title{
-    color:white;
-}
+
 .maintitles{
     font-family: 'Marck Script', cursive;
 }
 .footer-me{
     color:white;
     font-family: 'Marck Script', cursive;
+}
+.parallax {
+    /* The image used */
+    background-image: url(/assets/cherryblossom.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info-me{
+    border-bottom: 5px solid rgba(105, 105, 105, 0.404);
 }
