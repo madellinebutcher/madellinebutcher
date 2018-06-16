@@ -68,7 +68,8 @@ body{
 
 .aboutme{
     font-size: 3vh;
-    margin:0;
+    margin: 0;
+    padding-bottom: 2vh;
     
 }
 .skills-icon{
@@ -114,7 +115,6 @@ body{
 .projects{
     text-align: center;
     color:#f6bff8;
-    font-family: 'Marck Script', cursive;
     margin-right: 3vw;
 }
 /* .info-me{
