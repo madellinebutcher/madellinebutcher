@@ -11,121 +11,165 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script|Stylish" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Pompiere" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
 <body>
-    <header class="container-fluid">
-        <navbar>
-            <div class="row d-flex justify-content-between">
-                <div class="col-4 nav-col-1">
-                    <h4 class="nav-me pt-2">.maddy</h4>
-                </div>
-                <div class="col-4">
-                    <ul class="nav-format d-flex justify-content-center pt-2">
-                        <a href="">
-                            <li>About</li>
-                        </a>
-                        <a href="">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="">
-                            <li>Skills</li>
-                        </a>
-                        <a href="">
-                            <li>Resume</li>
-                        </a>
-                        <a href="">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
+
+    <div class="container-fluid header">
+        <div class="row d-flex justify-content-between header">
+            <div class="col-4">
+                <h4 class="nav-me">.maddy</h4>
+            </div>
+            <div class="col-4">
+                <ul class="nav-format d-flex justify-content-center">
+                    <a href="#aboutme">
+                        <li>About</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li>Portfolio</li>
+                    </a>
+
+                    <a href="assets/MButcher Tech Resume.pdf" target="_blank">
+                        <li>Resume</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax">
+        <section class="container-fluid header">
+            <div class="row row-img">
+                <div class="col-12 d-flex justify-content-center">
+                    <img class="profile-img" src="assets/me.jpg" alt="me" height="160" width="150">
                 </div>
             </div>
-        </navbar>
-    </header>
-    <section class="container-fluid ">
-    <div class="row ">
-        <div class="col-12 d-flex justify-content-center">
-            <img class="profile-img" src="assets/me.jpg" alt="me" height="160" width="150">
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-            <h1 class="myname pt-2">Madelline Butcher</h1>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-            <h3 class="title">Junior Developer</h3>
-        </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h1 class="myname pt-2">Madelline Butcher</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h3 class="myname">Junior Developer</h3>
+                </div>
+            </div>
+            <div class="row info-me">
+                <div class="col d-flex justify-content-center">
+                    <a href="https://github.com/madellinebutcher/">
+                        <i class="fab fa-github fa-2x mr-2 icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/madelline-butcher-062a2b149">
+                        <i class="fab fa-linkedin fa-2x icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row info-me">
+                <div class="col d-flex justify-content-center">
+                    <i class="far fa-envelope fa-2x icon"></i>
+                    <h4 class="contactinfo mr-2">madellinebutcher@gmail.com</h4>
+
+
+                    <i class="fas fa-mobile-alt fa-2x icon"></i>
+                    <h4 class="contactinfo">(208) 850-9826</h4>
+
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="row info-me">
-        <div class="col d-flex justify-content-center">
-            <a href="">
-                <i class="fab fa-github fa-2x mr-2 icon"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-linkedin fa-2x icon"></i>
-            </a>
-        </div>
-    </div>
-    </section>
     <!--Intro-->
     <section class="container-fluid">
         <!--About-->
         <div class="parallax"></div>
-        <div class="row about-bg" style="height:100px">
+        <div class="row about-bg">
 
             <div class="col-12">
-                <h1 class="maintitles">.about me</h1>
+                <h1 class="maintitles" id="aboutme">.about me</h1>
             </div>
             <div class="col-12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate, unde ut quidem perferendis iure
+                <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate, unde ut quidem perferendis iure
                     reiciendis, ipsa recusandae sint, laboriosam sapiente deleniti quibusdam rem quam tempora explicabo est
                     beatae labore?</p>
+                <div class="col d-flex justify-content-center space-between">
+                    <i class="devicon-html5-plain-wordmark skills-icon"></i>
+                    <i class="devicon-css3-plain-wordmark skills-icon"></i>
+                    <i class="devicon-bootstrap-plain skills-icon"></i>
+                    <i class="devicon-javascript-plain skills-icon"></i>
+                    <i class="devicon-csharp-plain skills-icon"></i>
+                    <i class="devicon-nodejs-plain skills-icon"></i>
+                    <i class="devicon-vuejs-plain skills-icon"></i>
+                    <i class="devicon-trello-plain skills-icon"></i>
+                </div>
             </div>
         </div>
         <!--Skills-->
         <div class="row about-bg">
-            <div class="col d-flex justify-content-center space-between">
-                <i class="devicon-html5-plain-wordmark skills-icon"></i>
-                <i class="devicon-css3-plain-wordmark skills-icon"></i>
-                <i class="devicon-bootstrap-plain skills-icon"></i>
-                <i class="devicon-javascript-plain skills-icon"></i>
-            </div>
         </div>
+
+        <div class="parallax"></div>
         <div class="row">
             <div class="col">
-                <h1 class="maintitles">.portfolio</h1>
+                <h1 class="maintitles-p" id="portfolio">.portfolio</h1>
             </div>
         </div>
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <img class="port-icon" src="//placehold.it/250x250" alt="">
-                <img class="port-icon" src="//placehold.it/250x250" alt="">
-                <img class="port-icon" src="//placehold.it/250x250" alt="">
+                <a href="http://madellinebutcher.github.io/SlapGame">
+                    <img class="port-icon" src="assets/SlapGame.png" alt="SlapGame"><h4 class="projects">Slap Game</h4>
+                </a>
+                <a href="http://madellinebutcher.github.io/musicIsFun">
+                    <img class="port-icon" src="assets/musicIsFun.png" alt="musicIsFun"><h4 class="projects">Music is Fun</h4>
+                </a>
+                <a href="http://madellinebutcher.github.io/myInspire">
+                    <img class="port-icon" src="assets/myInspire.png" alt="myInspire"><h4 class="projects">My Inspire</h4>
+                </a>
+                <a href="https://kanban-ramsey-maddy.herokuapp.com/#/login">
+                    <img class="port-icon" src="assets/KanBan.png" alt="KanBan"><h4 class="projects">KanBan</h4>
+                </a>
+                <a href="">
+                    <img class="port-icon" src="assets/Work_In_Progress.png" alt="CapStone"><h4 class="projects">CapStone</h4>
+                </a>
             </div>
         </div>
-        <div class="row contact-bg">
-            <div class="col">
-                <h1 class="maintitles">.contact me</h1>
-            </div>
-        </div>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
     </section>
 
     <footer class="container-fluid contact-bg">
         <div class="row">
-            <div class="col">
-                <h6>copyrighted and made by
-                    <span class="footer-me"> .maddy</span>
-                </h6>
-            </div>
+            <h6>copyrighted and made by
+                <span class="footer-me"> .maddy</span>
+            </h6>
+        </div>
         </div>
     </footer>
 </body>

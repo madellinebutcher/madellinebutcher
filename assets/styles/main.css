@@ -1,26 +1,26 @@
 
-body{
-    font-family: 'Stylish', sans-serif;
+body{   
+    font-family: 'Pompiere', cursive;
+    background-color: rgb(20, 18, 18);
+    
     
 }
-header{
+.container-fluid{
 
-    background-color: rgba(105, 105, 105, 0.404);
-    border-bottom: 5px solid #f6bff8;
+    background-color:transparent;
 
 }
+
+
 .myname{
-    font-family: 'Marck Script', cursive;
-    opacity: none;
-    margin:0;
+    font-family: 'IM Fell English SC', serif;
+    color:black;
 }
 
 .nav-format{
     list-style-type:none;
     color:black;
-}
-.nav-format a{
-    color:white;
+    
 }
 
 .sec-col-1{
@@ -28,30 +28,53 @@ header{
 }
 .profile-img{
     border-radius:6vw;
+    
 }
-
-.icon{
+.row-img{
+    padding-top:1vh;
+}
+.maintitles-p{
     color:#f6bff8;
+    font-family: 'Marck Script', cursive;
+}
+.contactinfo{
+    font-family: 'IM Fell English SC', serif;
+    
+}
+.icon{
+    color:rgb(187, 42, 102)
+}
+.nav-format a{
+    color:#f6bff8;
+    font-size: 3vh;
+    margin:0;
 }
 .nav-format li{
     padding-right:2vw;
 }
 
-.sec-col-3{
+/* .sec-col-3{
     height:5vh;
     color:white;
-}
+} */
 .about-bg{
     background-color: #FFE6EB;
 }
 .nav-me{
     color:#f6bff8;
     font-family: 'Marck Script', cursive;
+    margin: 0;
+}
+
+.aboutme{
+    font-size: 3vh;
+    margin:0;
+    
 }
 .skills-icon{
     margin-right:1vw;
     margin-bottom:1vh;
-    font-size:15vh;
+    font-size:8vh;
     color:rgb(187, 42, 102)
 }
 .contact-bg{
@@ -63,9 +86,9 @@ header{
 
 .maintitles{
     font-family: 'Marck Script', cursive;
+    margin:0;
 }
 .footer-me{
-    color:white;
     font-family: 'Marck Script', cursive;
 }
 .parallax {
@@ -73,7 +96,7 @@ header{
     background-image: url(/assets/cherryblossom.jpg);
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 200px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -81,6 +104,19 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.info-me{
-    border-bottom: 5px solid rgba(105, 105, 105, 0.404);
+
+.port-icon{
+    height:150px;
+    width:150px;
+    border-radius: 2vh;
+    box-shadow: 2px 1px #f6bff8
 }
+.projects{
+    text-align: center;
+    color:#f6bff8;
+    font-family: 'Marck Script', cursive;
+    margin-right: 3vw;
+}
+/* .info-me{
+    border-bottom: 5px solid rgba(105, 105, 105, 0.404);
+} */
