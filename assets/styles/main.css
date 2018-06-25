@@ -2,8 +2,12 @@
 body{   
     font-family: 'Pompiere', cursive;
     background-color: rgb(20, 18, 18);
+    height: 50%;
     
     
+}
+html{
+    height:100%;
 }
 .container-fluid{
 
@@ -91,13 +95,14 @@ body{
 }
 .footer-me{
     font-family: 'Marck Script', cursive;
+    
 }
 .parallax {
     /* The image used */
     background-image: url(/assets/cherryblossom.jpg);
 
     /* Set a specific height */
-    min-height: 200px; 
+    height: 50%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
