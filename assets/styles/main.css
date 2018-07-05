@@ -100,7 +100,7 @@ html{
 }
 .parallax {
     /* The image used */
-    background-image: url("/assets/cherryblossom.jpg");
+    background-image: url("../cherryblossom.jpg");
 
     /* Set a specific height */
     height: 50%; 
